@@ -36,7 +36,7 @@ $ambito4=($total14*$datos4[13]['PonderacionItem'])+($total15*$datos4[14]['Ponder
       ?>
 
       <body>
-        <div id="chartContainer"></div>
+        <div id="chartContainer" style="height: 100%; width: 100%;"></div>
 
         <script type="text/javascript">
 
@@ -49,17 +49,23 @@ $ambito4=($total14*$datos4[13]['PonderacionItem'])+($total15*$datos4[14]['Ponder
                     },
                     axisY: {
                         title: "Porcentajes",
+                        titleFontColor: "black",
+                        labelFontColor: "black",
                         titleFontSize: 20
                     },
                     axisX: {
                         interval: 1,
                         title: "Items",
-                        labelFontSize: 13.5
+                        titleFontColor: "black",
+                        labelFontSize: 15,
+                        labelAngle: 0,
+                        labelFontColor: "black"
                     },
                     data: [
                     {
                         type: "column",
                         indexLabel: "{y}%",
+                        indexLabelFontColor: "black",
                         dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
                     }
                     ]

@@ -46,7 +46,7 @@ $sumartoria9= $datos[42]['ponderacion_respuesta']+$datos[43]['ponderacion_respue
       ?>
 
       <body>
-        <div id="chartContainer"></div>
+        <div id="chartContainer" style="height: 100%; width: 100%;"></div>
 
         <script type="text/javascript">
 
@@ -59,17 +59,23 @@ $sumartoria9= $datos[42]['ponderacion_respuesta']+$datos[43]['ponderacion_respue
                     },
                     axisY: {
                         title: "Porcentajes",
+                        titleFontColor: "black",
+                        labelFontColor: "black",
                         titleFontSize: 20
                     },
                     axisX: {
                         interval: 1,
                         title: "Items",
-                        labelFontSize: 12
+                        titleFontColor: "black",
+                        labelFontSize: 15,
+                        labelAngle: 0,
+                        labelFontColor: "black"
                     },
                     data: [
                     {
                         type: "column",
                         indexLabel: "{y}%",
+                        indexLabelFontColor: "black",
                         dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
                     }
                     ]

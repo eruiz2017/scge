@@ -91,7 +91,7 @@ require_once dirname(dirname(__FILE__)).'/controller/ambito_controller.php';
       ?>
 
       <body>
-          <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+          <div id="chartContainer" style="height: 100%; width: 100%;"></div>
 
           <script type="text/javascript">
 
@@ -104,17 +104,23 @@ require_once dirname(dirname(__FILE__)).'/controller/ambito_controller.php';
                       },
                       axisY: {
                           title: "Porcentajes",
+                          titleFontColor: "black",
+                          labelFontColor: "black",
                           titleFontSize: 20
                       },
                       axisX: {
                           interval: 1,
                           title: "Ambitos",
-                          labelFontSize: 15
+                          titleFontColor: "black",
+                          labelFontSize: 15,
+                          labelAngle: 0,
+                          labelFontColor: "black"
                       },
                       data: [
                       {
                           type: "column",
                           indexLabel: "{y}%",
+                          indexLabelFontColor: "black",
                           dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
                       }
                       ]
