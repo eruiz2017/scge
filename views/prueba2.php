@@ -166,11 +166,56 @@ foreach ($datos as $key => $value) {
     function graficoItemsAmbito4() {
         window.open("../views/informeItemsAmbito4.php");
     }
+    function graficoPuntajeItem1() {
+        window.open("../views/informePuntajes1.php");
+    }
+    function graficoPuntajeItem2() {
+        window.open("../views/informePuntajes2.php");
+    }
+    function graficoPuntajeItem3() {
+        window.open("../views/informePuntajes3.php");
+    }
+    function graficoPuntajeItem4() {
+        window.open("../views/informePuntajes4.php");
+    }
+    function graficoPuntajeItem5() {
+        window.open("../views/informePuntajes5.php");
+    }
+    function graficoPuntajeItem6() {
+        window.open("../views/informePuntajes6.php");
+    }
+    function graficoPuntajeItem7() {
+        window.open("../views/informePuntajes7.php");
+    }
+    function graficoPuntajeItem8() {
+        window.open("../views/informePuntajes8.php");
+    }
+    function graficoPuntajeItem9() {
+        window.open("../views/informePuntajes9.php");
+    }
+    function graficoPuntajeItem10() {
+        window.open("../views/informePuntajes10.php");
+    }
+    function graficoPuntajeItem11() {
+        window.open("../views/informePuntajes11.php");
+    }
+    function graficoPuntajeItem12() {
+        window.open("../views/informePuntajes12.php");
+    }
+    function graficoPuntajeItem13() {
+        window.open("../views/informePuntajes13.php");
+    }
+    function graficoPuntajeItem14() {
+        window.open("../views/informePuntajes14.php");
+    }
+    function graficoPuntajeItem15() {
+        window.open("../views/informePuntajes15.php");
+    }
+    function graficoPuntajeItem16() {
+        window.open("../views/informePuntajes16.php");
+    }
     </script>
   </head>
-  
- <BR> 
-  
 <form name="frmIngresoRespuestas" action="" method="post"  enctype="multipart/form-data">
     <div id='messageAT'></div>
     <h3><?php echo $datos1[0]['NOMBREAMBITO']; ?> (<?php echo round($datos1[0]['PonderacionAmbito']*100),'%';    ?>)</h3>
@@ -180,6 +225,7 @@ foreach ($datos as $key => $value) {
                 <td>Item</td>
                 <td>Resultado</td>
                 <td>Puntaje</td>
+                <td>Graficos</td>
              </tr>
         </thead>
         <tbody>
@@ -193,8 +239,10 @@ foreach ($datos as $key => $value) {
                <?php echo $sumartoria1;    ?> puntos (de 72 en total)
             </td>
             <td>
-
                <?php echo round($total1*100),'%';    ?> (ponderacion de <?php echo $datos4[0]['PonderacionItem']; ?>)
+            </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem1()">
             </td>
           </tr>
           <tr>
@@ -209,6 +257,9 @@ foreach ($datos as $key => $value) {
             <td>
                <?php echo round($total2*100),'%';    ?> (ponderacion de <?php echo $datos4[1]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem2()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -222,6 +273,9 @@ foreach ($datos as $key => $value) {
             <td>
                <?php echo round($total3*100),'%';    ?> (ponderacion de <?php echo $datos4[2]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem3()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -234,6 +288,9 @@ foreach ($datos as $key => $value) {
             </td>
             <td>
                <?php echo round($total4*100),'%';    ?> (ponderacion de <?php echo $datos4[3]['PonderacionItem']; ?>)
+            </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem4()">
             </td>
           </tr>
         </tbody>
@@ -256,6 +313,7 @@ foreach ($datos as $key => $value) {
                 <td>Item</td>
                 <td>Resultado</td>
                 <td>Puntaje</td>
+                <td>Graficos</td>
              </tr>
         </thead>
         <tbody>
@@ -277,6 +335,9 @@ foreach ($datos as $key => $value) {
                ?>
                <?php echo round($total5*100),'%';    ?> (ponderacion de <?php echo $datos4[4]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem5()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -289,6 +350,9 @@ foreach ($datos as $key => $value) {
             </td>
             <td>
                <?php echo round($total6*100),'%';    ?> (ponderacion de <?php echo $datos4[5]['PonderacionItem']; ?>)
+            </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem6()">
             </td>
           </tr>
           <tr>
@@ -303,6 +367,9 @@ foreach ($datos as $key => $value) {
             <td>
                <?php echo round($total7*100),'%';    ?> (ponderacion de <?php echo $datos4[6]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem7()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -316,6 +383,9 @@ foreach ($datos as $key => $value) {
             <td>
                <?php echo round($total8*100),'%';    ?> (ponderacion de <?php echo $datos4[7]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem8()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -328,6 +398,9 @@ foreach ($datos as $key => $value) {
             </td>
             <td>
                <?php echo round($total9*100),'%';    ?> (ponderacion de <?php echo $datos4[8]['PonderacionItem']; ?>)
+            </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem9()">
             </td>
           </tr>
         </tbody>
@@ -350,6 +423,7 @@ foreach ($datos as $key => $value) {
                 <td>Item</td>
                 <td>Resultado</td>
                 <td>Puntaje</td>
+                <td>Graficos</td>
              </tr>
         </thead>
         <tbody>
@@ -371,6 +445,9 @@ foreach ($datos as $key => $value) {
                ?>
                <?php echo round($total10*100),'%';    ?> (ponderacion de <?php echo $datos4[9]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem10()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -383,6 +460,9 @@ foreach ($datos as $key => $value) {
             </td>
             <td>
                <?php echo round($total11*100),'%';    ?> (ponderacion de <?php echo $datos4[10]['PonderacionItem']; ?>)
+            </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem11()">
             </td>
           </tr>
           <tr>
@@ -397,6 +477,9 @@ foreach ($datos as $key => $value) {
             <td>
                <?php echo round($total12*100),'%';    ?> (ponderacion de <?php echo $datos4[11]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem12()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -409,6 +492,9 @@ foreach ($datos as $key => $value) {
             </td>
             <td>
                <?php echo round($total13*100),'%';    ?> (ponderacion de <?php echo $datos4[12]['PonderacionItem']; ?>)
+            </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem13()">
             </td>
           </tr>
         </tbody>
@@ -431,6 +517,7 @@ foreach ($datos as $key => $value) {
                 <td>Item</td>
                 <td>Resultado</td>
                 <td>Puntaje</td>
+                <td>Graficos</td>
              </tr>
         </thead>
         <tbody>
@@ -452,6 +539,9 @@ foreach ($datos as $key => $value) {
                ?>
                <?php echo round($total14*100),'%';    ?> (ponderacion de <?php echo $datos4[13]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem14()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -465,6 +555,9 @@ foreach ($datos as $key => $value) {
             <td>
                <?php echo round($total15*100),'%';    ?> (ponderacion de <?php echo $datos4[14]['PonderacionItem']; ?>)
             </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem15()">
+            </td>
           </tr>
           <tr>
             <td>
@@ -477,6 +570,9 @@ foreach ($datos as $key => $value) {
             </td>
             <td>
                <?php echo round($total16*100),'%';    ?> (ponderacion de <?php echo $datos4[15]['PonderacionItem']; ?>)
+            </td>
+            <td>
+               <input type="button" value="Ver Grafico" onclick="graficoPuntajeItem16()">
             </td>
           </tr>
         </tbody>
