@@ -143,21 +143,17 @@ public function getPregunta ($codigo)
                 $sqlEvidencia .=", evidencia= '".$escrituraspdf."'";
 
             $sqlEvidencia .=" where id_pregunta= '".$pregunta."' ";
+            
 
-            //   echo $sqlEvidencia;
+            //  echo $sqlEvidencia;
 
             $q = $this->db->prepare($sqlEvidencia);
             $q->execute();
             $res = $q->fetchAll();
               
-   
           
-            
-          
-
-
-
-
+             
+       
           }
 
             public function insertar_evidencia($evidencia,$pregunta,$fileEscritura)

@@ -270,7 +270,7 @@ foreach ($datos as $key => $value) {
         <tbody>
           
          <td>   
-         <textarea id="txtComentario"  name="txtComentario" rows="4" cols="108" <?php echo $editarCom;?>><?php echo $value["COMENTARIO"]?> </textarea>    
+         <textarea id="txtComentario"  name="txtComentario" rows="4" cols="108" <?php echo $editarCom;?> value="<?php echo $value["COMENTARIO"]?>"> </textarea>    
             
         </tbody>
     </table>
@@ -290,10 +290,9 @@ foreach ($datos as $key => $value) {
 <?php }else{?>
 <input type="button"  name="btnGuardarComentario" id="btnGuardarComentario" value="Guardar"  class="btn btn-primary"/>
 <?php }?>
+
 </form>  
           
-
-
 
 
 

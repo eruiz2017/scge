@@ -33,10 +33,6 @@ echo "comentario".$_POST['txtComentario'];
                                                    );
   
    
-    
-   
-   
-   
    
                                          
                                                   
