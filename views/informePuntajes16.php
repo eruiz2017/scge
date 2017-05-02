@@ -3,6 +3,13 @@ require_once dirname(dirname(__FILE__)).'/controller/resumenEvaluacionController
 require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
 require_once dirname(dirname(__FILE__)).'/controller/ambito_controller.php';
 ?>
+<?php
+$sumartoria16= $datos[75]['ponderacion_respuesta']+$datos[76]['ponderacion_respuesta']+
+       $datos[77]['ponderacion_respuesta']+$datos[78]['ponderacion_respuesta'];
+ ?>
+ <?php
+ $total16=$sumartoria16/48;
+  ?>
 
   <html>
       <head>
@@ -30,7 +37,7 @@ require_once dirname(dirname(__FILE__)).'/controller/ambito_controller.php';
                       theme: "theme2",
                       animationEnabled: true,
                       title: {
-                          text: "<?php echo $datos4[15]['NOMBREITEM'] ?>"
+                          text: "<?php echo $datos4[15]['NOMBREITEM'] ?> <?php echo round($total16*100),'%' ?>"
                       },
                       axisY: {
                           title: "Puntos",
