@@ -21,7 +21,7 @@ require("../util/Config.php");
 
 
 echo ' <ul>
-        <li><a class="active" href="../views/principal.php">Home</a></li>
+        <li><a class="active" href="../views/inicio.php">Home</a></li>
         <li id="ver_proyecto"><a href="#">Ver resumen de autoevaluación</a></li>
         <li id="res_final"><a href="#">Informe final</a></li>
         <li id="opcion4" style="float:right;"><a href="'.$path.'/logout.php">Cerrar</a></li>
