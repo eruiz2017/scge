@@ -107,7 +107,7 @@ public function getPregunta ($codigo)
                         $sqlUpdate =" update respuesta_pregunta set eliminado =1  where id_pregunta= ".$pregunta." and id_respuesta <> ".$respuesta.";
                                 update respuesta_pregunta set eliminado =0 where id_pregunta= ".$pregunta." and id_respuesta = ".$respuesta;
 
-                       // echo $sqlUpdate;
+                        echo $sqlUpdate;
                         $q = $this->db->prepare($sqlUpdate);
                         $q->execute();
                         $res = $q->fetchAll();
@@ -128,7 +128,6 @@ public function getPregunta ($codigo)
 
 
             }
-          if($pregunta=1)
            $dataFile = "&";
            // para archivo de escritura
            if (file_exists($fileEvidencia['tmp_name'])) {

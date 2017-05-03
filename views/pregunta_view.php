@@ -172,6 +172,8 @@ foreach ($datos as $key => $value) {
 }
 
 
+
+
 ?>
 
   <BR>
@@ -210,7 +212,7 @@ foreach ($datos as $key => $value) {
 
     <div id='messageAT'></div>
     <table width="100%" class="TableDatos">
-          <input type="hidden" name="id_indicador" id="id_indicador" value="<?php echo $_GET['idindicador']; ?>" readonly="readonly"/>
+        <input type="hidden" name="id_indicador" id="id_indicador" value="<?php echo $_GET['idindicador']; ?>" readonly="readonly"/>
       
          <thead>  
             <tr class="fondoTextoTitulo">
@@ -255,7 +257,7 @@ foreach ($datos as $key => $value) {
         <tbody>
           
          <td>   
-             <textarea id="txtobservaciones"  name="txtobservaciones" rows="4" cols="108" <?php echo $editar;?> ><?php echo $value["OBSERVACION"]?> </textarea>    
+             <textarea id="txtobservaciones"  name="txtobservaciones" rows="4" cols="108" <?php echo $editar;?> ><?php  echo $value["OBSERVACION"]?> </textarea>    
             
         </tbody>
     </table>

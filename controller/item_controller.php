@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 require_once ('../model/pregunta_model.php');
 $config = require_once("../util/config.php");
@@ -54,7 +54,7 @@ foreach ($datos3 as $key => $value) {
 
    $tabla3 .= "  <ul>
 
-                   <a href=# id='prueba2' onClick= \"  procesarIndicador('".$datos3[$key]['id_indicador']."','".$datos3[$key]['indicador_decripcion']."')\" >  <td>".$datos3[$key]['indicador_decripcion']."</td> </a>
+                   <a href=#  onClick= \"  procesarIndicador('".$datos3[$key]['id_indicador']."','".$datos3[$key]['indicador_decripcion']."')\" >  <td>".$datos3[$key]['indicador_decripcion']."</td> </a>
 
                  </ul>
 

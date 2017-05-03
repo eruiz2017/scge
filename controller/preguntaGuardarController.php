@@ -25,8 +25,8 @@ echo "comentario".$_POST['txtComentario'];
 
    $respuesta = $objAnalisisT->insertar_respuesta( $_POST["id_pregunta"],
                                                     $_POST["chk_respuesta"],
-                                                    $_POST['txtevidencia'],
-                                                    $_FILES['archivo_evidencia'],
+                                                    $_POST["txtevidencia"],
+                                                    $_FILES["archivo_evidencia"],
                                                     $_POST["txtComentario"],
                                                     $_POST["txtobservaciones"]
                 
@@ -34,7 +34,6 @@ echo "comentario".$_POST['txtComentario'];
   
    
    
-                                         
-                                                  
+                                    
                                                 
 ?>
