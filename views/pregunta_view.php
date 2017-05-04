@@ -19,7 +19,7 @@ session_start();
         // oculto mensajkes de error        
         var pasa = false;
         var len = document.frmIngresoRespuestas.elements.length;
-   /*     for(var i = 0 ; i< len;i++){
+       for(var i = 0 ; i< len;i++){
             if(document.frmIngresoRespuestas.elements[i].type == "radio")
                 if(document.frmIngresoRespuestas.elements[i].checked )
                 {
@@ -49,7 +49,7 @@ session_start();
                             return false;
                     }
             }
-           */ 
+            
         // enviamos los datos para guardar si estan correctos
         guardarDatoRespuesta();
     });
@@ -118,11 +118,12 @@ session_start();
             });
         }
       
-        
-        
+
         
         
 </script>
+
+
 
 
 
