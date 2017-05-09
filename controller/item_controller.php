@@ -1,5 +1,3 @@
-
-
 <?php
 session_start();
 
@@ -56,7 +54,7 @@ foreach ($datos3 as $key => $value) {
 
    $tabla3 .= "  <ul>
 
-                   <a href=# id='focoindicador'  onClick= \"  procesarIndicador('".$datos3[$key]['id_indicador']."','".$datos3[$key]['indicador_decripcion']."')\" >  <td>".$datos3[$key]['indicador_decripcion']."</td> </a>
+                   <a href=#  onClick= \"  procesarIndicador('".$datos3[$key]['id_indicador']."','".$datos3[$key]['indicador_decripcion']."')\" >  <td>".$datos3[$key]['indicador_decripcion']."</td> </a>
 
                  </ul>
 

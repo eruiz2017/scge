@@ -46,28 +46,22 @@
     }
     
     
-
-
+    
+ 
     
  function procesarIndicador(idindicador,nombreindicador)  {
     //alert(nombreindicador);
     // document.getElementById('ruta').innerHTML=  document.getElementById('ruta').innerHTML + "/"+ "<a href=#>"+  nombreindicador+"</a>" ;
           
-        
      var nombrediv= idindicador;   
     $(nombrediv).load('../views/pregunta_view.php?idindicador='+idindicador);  
 
     $("#columnader").load('../views/pregunta_view.php?idindicador='+idindicador);
          
-   
-     
+     //$("#columnader").load("../views/pregunta_view.php"); 
+           
    
     }
-    
-   //  document.getElementById('focoindicador').focus();
-    
-    
-   
     
 
    

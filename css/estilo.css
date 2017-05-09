@@ -3,12 +3,6 @@ body{
    padding-top: 10px;
 }
 
-a:focus, a:active {
-    color: red;
-}
-
-
-
 #principal{
     width: 1000px;
    // border: 1px solid #CCC;
