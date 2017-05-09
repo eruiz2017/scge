@@ -218,7 +218,7 @@ foreach ($datos as $key => $value) {
   </head>
 <form name="frmIngresoRespuestas" action="" method="post"  enctype="multipart/form-data">
     <div id='messageAT'></div>
-    <h3><?php echo $datos1[0]['NOMBREAMBITO']; ?> (<?php echo round($datos1[0]['PonderacionAmbito']*100),'%';    ?>)</h3>
+    <h3><?php echo $datos1[0]['NOMBREAMBITO']; ?> <!--(<?php echo round($datos1[0]['PonderacionAmbito']*100),'%';    ?>)--></h3>
     <table width="100%" class="TableDatos">
         <thead>
             <tr class="fondoTextoTitulo">
@@ -306,7 +306,7 @@ foreach ($datos as $key => $value) {
 
 <form name="frmIngresoRespuestas" action="" method="post"  enctype="multipart/form-data">
     <div id='messageAT'></div>
-    <h3><?php echo $datos1[1]['NOMBREAMBITO']; ?> (<?php echo round($datos1[1]['PonderacionAmbito']*100),'%';    ?>)</h3>
+    <h3><?php echo $datos1[1]['NOMBREAMBITO']; ?> <!--(<?php echo round($datos1[1]['PonderacionAmbito']*100),'%';    ?>)--></h3>
     <table width="100%" class="TableDatos">
         <thead>
             <tr class="fondoTextoTitulo">
@@ -416,7 +416,7 @@ foreach ($datos as $key => $value) {
 
 <form name="frmIngresoRespuestas" action="" method="post"  enctype="multipart/form-data">
     <div id='messageAT'></div>
-    <h3><?php echo $datos1[2]['NOMBREAMBITO']; ?> (<?php echo round($datos1[2]['PonderacionAmbito']*100),'%';    ?>)</h3>
+    <h3><?php echo $datos1[2]['NOMBREAMBITO']; ?> <!--(<?php echo round($datos1[2]['PonderacionAmbito']*100),'%';    ?>)--></h3>
     <table width="100%" class="TableDatos">
         <thead>
             <tr class="fondoTextoTitulo">
@@ -510,7 +510,7 @@ foreach ($datos as $key => $value) {
 
 <form name="frmIngresoRespuestas" action="" method="post"  enctype="multipart/form-data">
     <div id='messageAT'></div>
-    <h3><?php echo $datos1[3]['NOMBREAMBITO']; ?> (<?php echo round($datos1[3]['PonderacionAmbito']*100),'%';    ?>)</h3>
+    <h3><?php echo $datos1[3]['NOMBREAMBITO']; ?> <!--(<?php echo round($datos1[3]['PonderacionAmbito']*100),'%';    ?>)--></h3>
     <table width="100%" class="TableDatos">
         <thead>
             <tr class="fondoTextoTitulo">

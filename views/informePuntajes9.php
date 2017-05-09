@@ -20,10 +20,10 @@ $sumartoria9= $datos[42]['ponderacion_respuesta']+$datos[43]['ponderacion_respue
 
       <?php
           $dataPoints = array(
-              array("y" => $datos[42]['ponderacion_respuesta'], "label" => $datos[42]['descripcionrespuesta']),
-              array("y" => $datos[43]['ponderacion_respuesta'], "label" => $datos[43]['descripcionrespuesta']),
-              array("y" => $datos[44]['ponderacion_respuesta'], "label" => $datos[44]['descripcionrespuesta']),
-              array("y" => $datos[45]['ponderacion_respuesta'], "label" => $datos[45]['descripcionrespuesta']),
+              array("y" => $datos[42]['ponderacion_respuesta'], "label" => $datos[42]['indicador_decripcion'].' '.$datos[42]['descripcionrespuesta']),
+              array("y" => $datos[43]['ponderacion_respuesta'], "label" => $datos[43]['indicador_decripcion'].' '.$datos[43]['descripcionrespuesta']),
+              array("y" => $datos[44]['ponderacion_respuesta'], "label" => $datos[44]['indicador_decripcion'].' '.$datos[44]['descripcionrespuesta']),
+              array("y" => $datos[45]['ponderacion_respuesta'], "label" => $datos[45]['indicador_decripcion'].' '.$datos[45]['descripcionrespuesta']),
           );
       ?>
 

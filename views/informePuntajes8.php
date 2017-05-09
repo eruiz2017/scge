@@ -20,9 +20,9 @@ $sumartoria8= $datos[39]['ponderacion_respuesta']+$datos[40]['ponderacion_respue
 
       <?php
           $dataPoints = array(
-              array("y" => $datos[39]['ponderacion_respuesta'], "label" => $datos[39]['descripcionrespuesta']),
-              array("y" => $datos[40]['ponderacion_respuesta'], "label" => $datos[40]['descripcionrespuesta']),
-              array("y" => $datos[41]['ponderacion_respuesta'], "label" => $datos[41]['descripcionrespuesta']),
+              array("y" => $datos[39]['ponderacion_respuesta'], "label" => $datos[39]['indicador_decripcion'].' '.$datos[39]['descripcionrespuesta']),
+              array("y" => $datos[40]['ponderacion_respuesta'], "label" => $datos[40]['indicador_decripcion'].' '.$datos[40]['descripcionrespuesta']),
+              array("y" => $datos[41]['ponderacion_respuesta'], "label" => $datos[41]['indicador_decripcion'].' '.$datos[41]['descripcionrespuesta']),
           );
       ?>
 

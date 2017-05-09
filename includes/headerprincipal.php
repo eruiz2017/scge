@@ -18,9 +18,9 @@
 	</head>
 	<body>
 		<div id="principal">
-			<div id="cabecera">
-				<div align="center">
-   					<img src="<?php echo $path;?>/img/cole.jpg"  height="200" width="200" align="500" />
+			<div id="cabeceraPrincipal">
+				<div align="center" style="margin-left:-175px;">
+   					<img src="<?php echo $path?>/img/csgbanner.jpg"/>
    				</div>
             </div>
             <?php
@@ -29,6 +29,3 @@
                                   <?php include("../includes/menu_principal.php"); ?>
 				</div>
 			<?php } ?>
-
-       
-            

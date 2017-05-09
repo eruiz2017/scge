@@ -10,12 +10,14 @@ body{
 }
 
 @import "url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css')";
- 
+
 
 #cabecera{
-   height: 250px;
-   border:1px solid #000000;
-   margin: 10px;
+   height: 170px;
+}
+
+#cabeceraPrincipal{
+   height: 260px;
 }
 
 #menu{
@@ -28,7 +30,7 @@ body{
     width: 980px;
     margin: 19px;
     position:absolute;
-    top: 300px;
+    top: 180px;
     left: 170px;
     //border: 1px solid #CCC;
    // background: url("../img/header_listo.jpg") no-repeat ;
@@ -40,7 +42,7 @@ body{
     padding: 0;
     overflow: hidden;
    background-color: #f0f3f4 ;
-     
+
 }
 
 li {
@@ -66,17 +68,17 @@ li {
 
 #columnaizq ul li a{
     text-decoration:none;     /*quita subrayado de hipervinculo*/
-    
+
 }
 
 #columnader{
     width: 700px;
-   
+
     margin: 10px;
     float: left;
     height: 500px;
     position:absolute;
-    top: 350px;
+    top: 230px;
     left: 450px;
      //border: 1px solid #CCC;
 }
@@ -91,37 +93,37 @@ li {
   //  border: 1px solid #CCC;
     margin: 10px;
  	padding-top: 10px;
-	padding-bottom: 10px;  
+	padding-bottom: 10px;
 	font-size: 11px;
-    
+
 }
 
 #loginForm{
 	margin: auto;
 	width: 400px;
-	padding-top: 40px;
+	padding-top: 10px;
 	padding-bottom: 40px;
 }
 
 #infoUsuario{
-	font-family: 'Roboto',Arial,sans-serif !important; 
+	font-family: 'Roboto',Arial,sans-serif !important;
         font-size: 12px !important;
 	height: 20px;
 	border-bottom: 1px solid #CCC;
         font-weight: bold;
-      
-        
+
+
 }
 
 #infoUsuario_nombre{
 	float: left;
-       
-        
+
+
 }
 #infoUsuario_rol{
 	float: right;
 }
-	  
+
 .alertaError{
 	color: #E30913;
 	//border: 1px solid rgba(215, 0, 0, 0.75);
@@ -136,9 +138,9 @@ li {
     font-size: 14px !important;
 }
 .TableDatos table{
-    
+
 }
-.TableDatos tbody{    
+.TableDatos tbody{
 }
 .TableDatos tr{
     border: #265a88 1px solid;;
@@ -162,14 +164,14 @@ li {
 }
 
 #OrderPackages{
-    
+
   width: 200px;
-	  
+
 }
 
 input[type="radio"] {
      width:50px;
     height:50px;
      vertical-align: baseline;
-    
+
 }

@@ -21,12 +21,12 @@ $sumartoria10= $datos[46]['ponderacion_respuesta']+$datos[47]['ponderacion_respu
 
       <?php
           $dataPoints = array(
-              array("y" => $datos[46]['ponderacion_respuesta'], "label" => $datos[46]['descripcionrespuesta']),
-              array("y" => $datos[47]['ponderacion_respuesta'], "label" => $datos[47]['descripcionrespuesta']),
-              array("y" => $datos[48]['ponderacion_respuesta'], "label" => $datos[48]['descripcionrespuesta']),
-              array("y" => $datos[49]['ponderacion_respuesta'], "label" => $datos[49]['descripcionrespuesta']),
-              array("y" => $datos[50]['ponderacion_respuesta'], "label" => $datos[50]['descripcionrespuesta']),
-              array("y" => $datos[51]['ponderacion_respuesta'], "label" => $datos[51]['descripcionrespuesta']),
+              array("y" => $datos[46]['ponderacion_respuesta'], "label" => $datos[46]['indicador_decripcion'].' '.$datos[46]['descripcionrespuesta']),
+              array("y" => $datos[47]['ponderacion_respuesta'], "label" => $datos[47]['indicador_decripcion'].' '.$datos[47]['descripcionrespuesta']),
+              array("y" => $datos[48]['ponderacion_respuesta'], "label" => $datos[48]['indicador_decripcion'].' '.$datos[48]['descripcionrespuesta']),
+              array("y" => $datos[49]['ponderacion_respuesta'], "label" => $datos[49]['indicador_decripcion'].' '.$datos[49]['descripcionrespuesta']),
+              array("y" => $datos[50]['ponderacion_respuesta'], "label" => $datos[50]['indicador_decripcion'].' '.$datos[50]['descripcionrespuesta']),
+              array("y" => $datos[51]['ponderacion_respuesta'], "label" => $datos[51]['indicador_decripcion'].' '.$datos[51]['descripcionrespuesta']),
           );
       ?>
 

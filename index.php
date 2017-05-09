@@ -1,18 +1,18 @@
-<?php 
+<?php
 $titulo_pagina = "Sistema....";
 include("util/Seguridad.php");
 include("util/Config.php");
-include("includes/header.php");
+include("includes/headerprincipal.php");
 ?>
 
 <?php
 if(!Seguridad::sesionIniciada())
 	include("login.php");
-else 
+else
 	header("Location: http://".$dominio."/scge/".$pagina_principal);
 ?>
 
-<?php 
+<?php
 include("includes/footer.php");
 session_destroy();
 
@@ -20,4 +20,3 @@ session_destroy();
 
 
 ?>
-
