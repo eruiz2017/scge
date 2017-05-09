@@ -77,15 +77,6 @@ public function getPregunta ($codigo)
         }
 
 
-
-
-
-
-
-
-
-
-
        public function insertar_respuesta($pregunta,$respuesta, $txtevidencia, $fileEvidencia, $txtComentario, $txtobservaciones)
         {
 
@@ -133,7 +124,7 @@ public function getPregunta ($codigo)
            if (file_exists($fileEvidencia['tmp_name'])) {
                 $escrituraspdf =  "files/".'evidencia_'.$pregunta.'.pdf';
                 $dataFile .="1&";
-                copy( $fileEvidencia['tmp_name'], "../files/ambito".$pregunta."/evidencia_".$pregunta.'.pdf');
+                copy( $fileEvidencia['tmp_name'], "../files/evidencia_".$pregunta.'.pdf');
             } else $dataFile .="0&";
 
 
@@ -144,7 +135,8 @@ public function getPregunta ($codigo)
             $sqlEvidencia .=" where id_pregunta= '".$pregunta."' ";
             
 
-            //  echo $sqlEvidencia;
+              //echo $sqlEvidencia;
+            
 
             $q = $this->db->prepare($sqlEvidencia);
             $q->execute();
