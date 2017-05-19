@@ -1,22 +1,36 @@
 <?php
-//session_start();
+session_start();
 ?>
 
 
 <!--<input type="button"  name="goback" id="goback" value="goback"  class="btn btn-primary"/> -->
 <script type="text/javascript">
     
+  
+     $("#goback").click(function(){
+          
+      //      $("#columnader").load("m.principal.php"); 
+          
+      });
+    
     
    $(document).ready(function() {
         $("#btnGuardarRespuestas").click(function(event) {
-        // oculto mensajkes de error    
-      		
-                    
-      if (! $("input[name=chk_respuesta]").is(":checked") ) {
-         alert("Por favor seleccionar una respuesta");
-         return false;
-         
-         }
+        // oculto mensajkes de error        
+        var pasa = false;
+        var len = document.frmIngresoRespuestas.elements.length;
+        for(var i = 0 ; i< len;i++){
+            if(document.frmIngresoRespuestas.elements[i].type == "radio")
+                if(document.frmIngresoRespuestas.elements[i].checked )
+                {
+                    pasa = true;
+                }
+        }
+        if(!pasa)
+        {
+            alert("Debe seleccionar una respuesta");
+            return false;
+        }
 
         if(document.getElementById('txtevidencia').value == '')
         {
@@ -37,7 +51,6 @@
             }
           
         // enviamos los datos para guardar si estan correctos
-		
         guardarDatoRespuesta();
     });
         
@@ -192,6 +205,8 @@ foreach ($datos as $key => $value) {
     
 
 
+
+
 <?php require_once dirname(dirname(__FILE__)).'/controller/resumenEvaluacionController.php'; ?>
 <form name="frmIngresoRespuestas" action="" method="post"  enctype="multipart/form-data">
 
@@ -242,7 +257,7 @@ foreach ($datos as $key => $value) {
         <tbody>
           
          <td>   
-             <textarea id="txtobservaciones"  name="txtobservaciones" rows="4"  <?php echo $editar;?> ><?php  echo $value["OBSERVACION"]?> </textarea>    
+             <textarea id="txtobservaciones"  name="txtobservaciones" rows="4" cols="108" <?php echo $editar;?> ><?php  echo $value["OBSERVACION"]?> </textarea>    
             
         </tbody>
     </table>
@@ -257,7 +272,7 @@ foreach ($datos as $key => $value) {
         <tbody>
           
          <td>   
-         <textarea id="txtComentario"  name="txtComentario" rows="4"  <?php echo $editarCom;?> value="<?php echo $value["COMENTARIO"]?>"> </textarea>    
+         <textarea id="txtComentario"  name="txtComentario" rows="4" cols="108" <?php echo $editarCom;?> value="<?php echo $value["COMENTARIO"]?>"> </textarea>    
             
         </tbody>
     </table>

@@ -1,5 +1,21 @@
-<br>
+
+<p id="ruta"></p>
+<p id="demo"></p>
+
 <?php
+/*  require("../util/Config.php");
+
+	echo ' <ul>
+	 <li id="ingreso_proyecto">Ingreso a la plataforma de autoevaluación</li>
+		 <li id="ver_proyecto">Ver resumen de autoevaluación</li>
+                  <li id="res_final">Informe final</li>
+
+		<a href="'.$path.'/logout.php" ><li id="opcion4">Cerrar</li></a>
+
+	      </ul>';
+
+	*/
+
 
 require("../util/Config.php");
 
@@ -14,10 +30,53 @@ echo ' <ul>
 
   </ul>';
 
+
+
+
+
+
+
+
 ?>
 
 
 
+<link href="../css2/bootstrap.min.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/bootstrap.min.js"    ></script>
+<script type="text/javascript" src="../js/jquery/jquery-3.1.1.min.js"    ></script>
+
+
+<script type="text/javascript">
+
+$(function() {
+
+$('#accordion1').on('shown.bs.collapse', function () {
+$("#package1 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+});
+
+
+$('#accordion2').on('shown.bs.collapse', function () {
+    $("#package2 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+});
+
+
+$('#accordion3').on('shown.bs.collapse', function () {
+    $("#package3 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+});
+
+
+
+$('#accordion4').on('shown.bs.collapse', function () {
+    $("#package4 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+});
+
+
+
+     });
+
+
+
+     </script>
 
 <?php
 
@@ -42,11 +101,6 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
 
 ?>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 <div id="OrderPackages">
     <table id="tableSearchResults" class="table table-hover  table-striped table-condensed" >
         <thead>
@@ -56,14 +110,14 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
         <tbody>
 
              <BR>
-             
-             
             <tr id="package1" class="accordion-toggle" data-toggle="collapse" data-parent="#OrderPackages" data-target=".packageDetails1">
-           
-             <th onclick="mostrar_item(1,'<?php echo $datos1[0]['NOMBREAMBITO'];?>')" ><?php echo $datos1[0]['NOMBREAMBITO'];?>  </th>
+
+              <th onclick="mostrar_item(1,'<?php echo $datos1[0]['NOMBREAMBITO'];?>')" ><?php echo $datos1[0]['NOMBREAMBITO'];?> </th>
                 <th></th>
-             </tr>
-            
+               <td><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+
+                </td>
+            </tr>
             <tr>
                 <td colspan="3" class="hiddenRow">
                     <div class="accordion-body collapse packageDetails1" id="accordion1" >
@@ -85,7 +139,8 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
 
                 <th></th>
 
-             
+               <td><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+
                 </td>
             </tr>
               <tr>
@@ -106,7 +161,8 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
                 <th  onclick="mostrar_item(3,'<?php echo $datos1[2]['NOMBREAMBITO'];?>')"><?php echo $datos1[2]['NOMBREAMBITO'];?></th>
 
                 <th></th>
-            
+                 <td><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+                 </td>
             </tr>
 
               <tr>
@@ -128,7 +184,8 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
                 <th onclick="mostrar_item(4,'<?php echo $datos1[3]['NOMBREAMBITO'];?>')" ><?php echo $datos1[3]['NOMBREAMBITO'];?></th>
 
                 <th ></th>
-               
+                 <td><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+                 </td>
             </tr>
 
               <tr>
@@ -158,4 +215,3 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
      </div>
 
 </div>
-
