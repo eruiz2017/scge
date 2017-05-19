@@ -1,15 +1,13 @@
-@CHARSET "ISO-8859-1";
+
 body{
    padding-top: 10px;
 }
 
 #principal{
     width: 1000px;
-   // border: 1px solid #CCC;
-    margin:0 auto;
+     margin:0 auto;
 }
 
-@import "url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css')";
 
 
 #cabecera{
@@ -32,8 +30,7 @@ body{
     position:absolute;
     top: 180px;
     left: 170px;
-    //border: 1px solid #CCC;
-   // background: url("../img/header_listo.jpg") no-repeat ;
+   
 }
 
 #columnaizq ul{                          /*propiedad para desaparecer puntos de lista*/
@@ -50,9 +47,7 @@ li {
 }
 
 #columnaizq  li a{
-  //margin-top: 5px;
-  //font-family: tahoma;
-  display: block;
+   display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -61,7 +56,6 @@ li {
 }
 
 #columnaizq li a:hover{
- //  background-color:    #2a6e90     ;
 
 }
 
@@ -70,6 +64,22 @@ li {
     text-decoration:none;     /*quita subrayado de hipervinculo*/
 
 }
+
+
+#btnprincipal{
+  display: inline-block;
+    border-radius: 10px;
+    background-color: #001c56;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 287px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+ }
 
 #columnader{
     width: 700px;
@@ -80,7 +90,7 @@ li {
     position:absolute;
     top: 230px;
     left: 450px;
-     //border: 1px solid #CCC;
+    
 }
 
 .clear{
@@ -90,8 +100,7 @@ li {
 
 #pie{
     height: 90px;
-  //  border: 1px solid #CCC;
-    margin: 10px;
+     margin: 10px;
  	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 11px;
@@ -126,7 +135,7 @@ li {
 
 .alertaError{
 	color: #E30913;
-	//border: 1px solid rgba(215, 0, 0, 0.75);
+	
     box-shadow:inset 0px 0px 2px 0px rgba(255, 0, 0, 0.75);
 }
 
@@ -170,8 +179,14 @@ li {
 }
 
 input[type="radio"] {
-     width:50px;
-    height:50px;
+ 
      vertical-align: baseline;
 
+}
+
+textarea{
+  height: 8em;
+  width: 50em;
+  
+    
 }

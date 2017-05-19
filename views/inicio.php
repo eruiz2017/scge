@@ -1,8 +1,7 @@
 
-
 <script>
 
-   
+
       function mostrar_item(idAmbito,nombreAmbito){
        //   document.getElementById('ruta').innerHTML= "<a href=#>" +nombreAmbito+ "</a>"  ;
             
@@ -65,6 +64,7 @@
     
 
    
+
    
 </script>
 <?php

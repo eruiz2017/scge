@@ -1,9 +1,13 @@
+<link href="<?php echo $path;?>../css/estilo.css"  rel="stylesheet" type="text/css" />
+        
+
 <div align="center">
-<img src="<?php echo $path;?>/img/under-maintenance.jpg"  height="500" width="500" align="500" />
+<img src="<?php echo $path;?>../img/under-maintenance.jpg"  height="300" width="500" align="500" />
 </div>
 
-<?php
-echo ' <ul>
-           <li id="atras" style="float:right;"><a href="../views/principal.php">Atras</a></li>
-       </ul>';
-?>
+      <center>   
+        
+       <a href="../views/principal.php"><button id="btnprincipal" class="btnprincipal" ><span>Atras</span></button></a>
+
+       </center>   
+

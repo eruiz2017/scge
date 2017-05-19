@@ -1,6 +1,4 @@
 
-
-
 <?php
 require("../util/Config.php");
 
