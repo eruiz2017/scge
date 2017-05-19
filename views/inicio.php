@@ -2,70 +2,70 @@
 
 <script>
 
-   
+
       function mostrar_item(idAmbito,nombreAmbito){
        //   document.getElementById('ruta').innerHTML= "<a href=#>" +nombreAmbito+ "</a>"  ;
-            
-            
+
+
             if(idAmbito=1) {
-               
+
                $("#idAmbito1").load('../controller/item_controller.php?idAmbito='+idAmbito);
             }
-           
+
             if(idAmbito=2){
 
                 $("#idAmbito2").load('../controller/item_controller.php?idAmbito='+idAmbito);
-                
+
               }
                 if(idAmbito=3) {
-            
+
                 $("#idAmbito3").load('../controller/item_controller.php?idAmbito='+idAmbito);
 
                  }
-                
-                 if(idAmbito=4) 
-                 {     
-            
+
+                 if(idAmbito=4)
+                 {
+
                  $("#idAmbito4").load('../controller/item_controller.php?idAmbito='+idAmbito);
-             
+
                  }
 
-          
-     } 
-     
-     
+
+     }
+
+
      function procesarItem(iditem,nombreitem){
      //alert(nombreitem);
-       var nombrediv='#div'+iditem; 
-         
+       var nombrediv='#div'+iditem;
+
    //document.getElementById('ruta').innerHTML =  document.getElementById('ruta').innerHTML + "/"+ "<a href=# onclick= numbers.forEach(myFunction) >" +nombreitem +  "</a>" ;
-    
-      $(nombrediv).load('../controller/item_controller.php?iditem='+iditem);  
-     
-     
+
+      $(nombrediv).load('../controller/item_controller.php?iditem='+iditem);
+
+
     }
-    
-    
-    
- 
-    
+
+
+
+
+
  function procesarIndicador(idindicador,nombreindicador)  {
     //alert(nombreindicador);
     // document.getElementById('ruta').innerHTML=  document.getElementById('ruta').innerHTML + "/"+ "<a href=#>"+  nombreindicador+"</a>" ;
-          
-     var nombrediv= idindicador;   
-    $(nombrediv).load('../views/pregunta_view.php?idindicador='+idindicador);  
+
+     var nombrediv= idindicador;
+    $(nombrediv).load('../views/pregunta_view.php?idindicador='+idindicador);
 
     $("#columnader").load('../views/pregunta_view.php?idindicador='+idindicador);
-         
-     //$("#columnader").load("../views/pregunta_view.php"); 
-           
-   
-    }
-    
 
-   
-   
+     //$("#columnader").load("../views/pregunta_view.php");
+
+
+    }
+
+
+
+
 </script>
 <?php
 //session_start();
@@ -78,15 +78,15 @@ include(dirname(dirname(__FILE__))."/includes/header.php");
 <div id="principal">
 	  	<?php include(dirname(__FILE__)."/infoUsuario.php")?>
 	<div id="columnader">
-           
+    <img src="<?php echo $path?>/img/grafico-sistema-calidad-BIEN.jpg" height="370" width="700" style="margin-top:20px;"/>
 	</div>
-            
-</div>	
-<?php }else{ 
+
+</div>
+<?php }else{
             echo '<div id="columnader" ></div>';
 	header("Location: ../error.php/?codigo=1");
 }
 ?>
-<?php 
+<?php
 //include(dirname(dirname(__FILE__))."/includes/footer.php");
 ?>
