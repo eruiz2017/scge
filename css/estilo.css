@@ -1,6 +1,7 @@
 
 body{
    padding-top: 10px;
+   background-color: #74a0a9;
 }
 
 #principal{
@@ -38,7 +39,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-   background-color: #f0f3f4 ;
+   background-color:  #010743 ;
 
 }
 
@@ -47,10 +48,18 @@ li {
 }
 
 #columnaizq  li a{
+<<<<<<< HEAD
    display: block;
     color: black;
+=======
+  //margin-top: 5px;
+  //font-family: tahoma;
+  display: block;
+    color: white;
+>>>>>>> 2e957ddf979a30ab8ac2470f0cb870df14af3c67
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 16px;
+    font-size: 18px;
     text-decoration: none;
     font-weight:bold;
 }
@@ -65,6 +74,7 @@ li {
 
 }
 
+<<<<<<< HEAD
 
 #btnprincipal{
   display: inline-block;
@@ -80,6 +90,20 @@ li {
     cursor: pointer;
     margin: 20px;
  }
+=======
+ ul#myList {
+    background: transparent;
+}
+
+ul#myList ul{
+   background: transparent;
+}
+
+
+ul#myList a{
+    color: black;
+}
+>>>>>>> 2e957ddf979a30ab8ac2470f0cb870df14af3c67
 
 #columnader{
     width: 700px;
@@ -104,7 +128,7 @@ li {
  	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 11px;
-
+  color:black;
 }
 
 #loginForm{
@@ -120,7 +144,7 @@ li {
 	height: 20px;
 	border-bottom: 1px solid #CCC;
         font-weight: bold;
-
+  color: black;
 
 }
 
@@ -156,7 +180,8 @@ li {
     height: 33px;
 }
 .TableDatos td{
-    border: #265a88 1px solid;;
+    border: #265a88 1px solid;
+    color: black;
 }
 
 .textoTitulo{
