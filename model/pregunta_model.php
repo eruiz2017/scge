@@ -9,13 +9,18 @@ class pregunta{
     }
 
     public function getFinalizarEncuesta ($idEncuesta){
+      
+        
            $sqlUpdate =" update encuesta
+                         set estado ='terminada' 
                          where id_encuesta = ".$idEncuesta." ";
 
                         $q = $this->db->prepare($sqlUpdate);
                         $q->execute();
                         $res = $q->fetchAll();
     }
+    
+    
 
     public function getPregunta ($codigo)
         {
@@ -47,6 +52,7 @@ class pregunta{
 
 public function getEstadoEncuesta ()
         {
+    // obtengo el estado de la encuesta 
     $sqlEncuesta = " SELECT id_encuesta, DATE_FORMAT(fecha_inicio, '%Y-%m-%d') "
                  . "AS fechainicio, DATE_FORMAT(fecha_fin, '%Y-%m-%d') AS fechafin "
                  . "from encuesta WHERE id_encuesta='".$_COOKIE['id_encuesta']."'"
@@ -54,6 +60,7 @@ public function getEstadoEncuesta ()
     $q = $this->db->prepare($sqlEncuesta);
     $q->execute();
     $resultado = $q->fetchAll();
+   
     if($resultado)
         {
             return  '';
@@ -61,6 +68,7 @@ public function getEstadoEncuesta ()
     else
         {
           return  " disabled='disabled'";
+        } 
         }
 
     public function getItem ($codigo)
@@ -159,12 +167,18 @@ public function getEstadoEncuesta ()
                 $sqlEvidencia .=", evidencia= '".$escrituraspdf."'";
 
             $sqlEvidencia .=" where id_pregunta= '".$pregunta."' ";
+            
 
               //echo $sqlEvidencia;
+            
 
             $q = $this->db->prepare($sqlEvidencia);
             $q->execute();
             $res = $q->fetchAll();
+              
+          
+             
+       
           }
 
             public function insertar_evidencia($evidencia,$pregunta,$fileEscritura)
@@ -208,9 +222,11 @@ public function getEstadoEncuesta ()
                          . " p.observacion, "
                          . " p.comentario "
 
+                         . " from pregunta p join respuesta r on p.id_pregunta = r.id_pregunta inner join "
                          . "respuesta_pregunta rp on rp.eliminado = 0 "
                          . "and p.id_pregunta = rp.id_pregunta"
                          . " and r.id_respuesta = rp.id_respuesta join indicadores i on "
+                         . "r.id_indicador= i.id_indicador where 1=1 ORDER BY p.id_pregunta";
 
 
                    //echo $sql.'<br>';
@@ -251,6 +267,9 @@ public function getEstadoEncuesta ()
                   return $result;
 
         }
+        
+        
+        
         public function getEncuesta(){
 
                $sql = " select * from encuesta";
@@ -265,6 +284,11 @@ public function getEstadoEncuesta ()
                   return $result;
 
         }
+        
+        
+        
+        
+        
 
 
 
