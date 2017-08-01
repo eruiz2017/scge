@@ -83,7 +83,8 @@ require_once dirname(dirname(__FILE__)).'/controller/ambito_controller.php';
 
       <?php
           $dataPoints = array(
-              array("y" => round($ambito1*100),'%', "label" => $datos1[0]['NOMBREAMBITO']),
+              array("y" => round($puntajeFinal*100),'%', "label" => "Puntaje Institucional"),
+			  array("y" => round($ambito1*100),'%', "label" => $datos1[0]['NOMBREAMBITO']),
               array("y" => round($ambito2*100),'%', "label" => $datos1[1]['NOMBREAMBITO']),
               array("y" => round($ambito3*100),'%', "label" => $datos1[2]['NOMBREAMBITO']),
               array("y" => round($ambito4*100),'%', "label" => $datos1[3]['NOMBREAMBITO']),

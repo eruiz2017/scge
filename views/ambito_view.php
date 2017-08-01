@@ -2,39 +2,14 @@
 
 <html>
   
+<!--
 <link href="../css2/bootstrap.min.css"  rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/bootstrap.min.js"    ></script>
 <script type="text/javascript" src="../js/jquery/jquery-3.1.1.min.js"    ></script>
-
+-->
 
 <script type="text/javascript">
-      
-$(function() {  
-    
-$('#accordion1').on('shown.bs.collapse', function () {
-$("#package1 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-});
-
-
-$('#accordion2').on('shown.bs.collapse', function () {
-    $("#package2 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-});
-    
-    
-$('#accordion3').on('shown.bs.collapse', function () {
-    $("#package3 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-});
-
-
-
-$('#accordion4').on('shown.bs.collapse', function () {
-    $("#package4 i.indicator").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-});
-    
-    
-            
-     });   
-     
+   
         function mostrar_resumen(idambito){
          // alert(idambito);
          $("#idambito").load('../views/resumenAutoevaluacion.php?idambito='+idambito);
@@ -68,7 +43,7 @@ foreach ($datos1 as $key => $value) {
 require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
 
 ?>   
-        
+     
 <div id="OrderPackages">
     <table id="tableSearchResults" class="table table-hover  table-striped table-condensed">
         <thead>
@@ -76,13 +51,12 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
             </tr>
         </thead>
         <tbody>
+            
             <tr id="package1" class="accordion-toggle" data-toggle="collapse" data-parent="#OrderPackages" data-target=".packageDetails1">
            
-                <th onclick="mostrar_resumen(1)" ><?php echo $datos1[0]['NOMBREAMBITO'];?>  </th> 
+                <th onclick="mostrar_resumen(1)" ><?php //echo $datos1[0]['NOMBREAMBITO'];?>  </th> 
                 <th></th>
-               <td><i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
-                  
-                </td>
+              
             </tr>
             <tr>
                 <td colspan="3" class="hiddenRow">
@@ -184,9 +158,3 @@ require_once dirname(dirname(__FILE__)).'/controller/item_controller.php';
 
 </html> 
         
-
-
-
-              
-             
-      
