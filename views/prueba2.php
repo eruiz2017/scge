@@ -298,7 +298,7 @@ foreach ($datos as $key => $value) {
           <tr class="fondoTextoTitulo">
               <td style="border:none;"></td>
               <td style="border:none;"></td>
-              <td style="border:none;">Porcentaje de logro del ámbito: <?php echo round($ambito1*100),'%' ; ?> </td>
+              <td style="border:none;" colspan="2">Porcentaje de logro del ámbito: <?php echo round($ambito1*100),'%' ; ?> </td>
         </thead>
     </table>
     <input type="button" value="Ver Grafico" onclick="graficoItemsAmbito1()">
@@ -408,7 +408,7 @@ foreach ($datos as $key => $value) {
           <tr class="fondoTextoTitulo">
               <td style="border:none;"></td>
               <td style="border:none;"></td>
-              <td style="border:none;">Porcentaje de logro del ámbito: <?php echo round($ambito2*100),'%' ; ?> </td>
+              <td style="border:none;" colspan="2">Porcentaje de logro del ámbito: <?php echo round($ambito2*100),'%' ; ?> </td>
         </thead>
     </table>
     <input type="button" value="Ver Grafico" onclick="graficoItemsAmbito2()">
@@ -502,7 +502,7 @@ foreach ($datos as $key => $value) {
           <tr class="fondoTextoTitulo">
               <td style="border:none;"></td>
               <td style="border:none;"></td>
-              <td style="border:none;">Porcentaje de logro del ámbito: <?php echo round($ambito3*100),'%' ; ?> </td>
+              <td style="border:none;" colspan="2">Porcentaje de logro del ámbito: <?php echo round($ambito3*100),'%' ; ?> </td>
         </thead>
     </table>
     <input type="button" value="Ver Grafico" onclick="graficoItemsAmbito3()">
@@ -580,7 +580,7 @@ foreach ($datos as $key => $value) {
           <tr class="fondoTextoTitulo">
               <td style="border:none;"></td>
               <td style="border:none;"></td>
-              <td style="border:none;">Porcentaje de logro del ámbito: <?php echo round($ambito4*100),'%' ; ?> </td>
+              <td style="border:none;" colspan="2">Porcentaje de logro del ámbito: <?php echo round($ambito4*100),'%' ; ?> </td>
         </thead>
     </table>
     <input type="button" value="Ver Grafico" onclick="graficoItemsAmbito4()">
